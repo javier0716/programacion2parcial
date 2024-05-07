@@ -1,5 +1,5 @@
 usuario_1 = {
-    "nombre": "Karen Hellyzzabeth",
+    "nombre": "Karen Helyzzabeth",
     "apellido": "Cruz Garmendia",
     "f_nac": "16/02/2009",
     "estado": True
