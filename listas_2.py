@@ -6,7 +6,7 @@ lista_compras = []
 while not salir:
     print("------ Menu ------")
     print("1. imprimir lista de compras")
-    print("2. Agregar elemto a la lista")
+    print("2. Agregar elemento a la lista")
     print("0. Salir")
 
     opt = input ("Ingrese una opcion:")
