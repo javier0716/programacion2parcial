@@ -1,6 +1,5 @@
 
 
-
 def imprimir_menu():
     print('----- Valentin Elizalde -----')
     print('1. Ver todas las tareas')
