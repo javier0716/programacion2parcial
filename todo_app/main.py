@@ -19,12 +19,15 @@ test_data = {
         'estado': True,
         'valor': 3.1
     }
+
 print(test_data)
 
 json_text = json.dumps(test_data)
 print(json_text)
     
-    
+with open('YHLQMDLG.json', 'w') as YHLQMDLG_file:
+    YHLQMDLG_file.write(json_text)
+    YHLQMDLG_file.close()
     
     
     
