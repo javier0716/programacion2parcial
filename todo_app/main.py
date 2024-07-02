@@ -1,8 +1,8 @@
 from menu import imprimir_menu
 from datos import crear_tarea, obtener_todas_las_tareas
-import json 
+# import json 
 
-salir = True
+salir = False
 
 
 #with open('test.json') as testfile:
@@ -14,20 +14,21 @@ salir = True
 #    print(data['usuarios'][0]['ud'])
     
     
-test_data = {
-        'texto': 'Hola Mundo',
-        'estado': True,
-        'valor': 3.1
-    }
+# test_data = {
+#         'texto': 'Hola Mundo',
+#         'estado': True,
+#         'valor': 3.1
+#     }
 
-print(test_data)
+# print(test_data)
 
-json_text = json.dumps(test_data)
-print(json_text)
+# json_text = json.dumps(test_data)
+# print(json_text)
     
-with open('YHLQMDLG.json', 'w') as YHLQMDLG_file:
-    YHLQMDLG_file.write(json_text)
-    YHLQMDLG_file.close()
+# with open('YHLQMDLG.json', 'w') as YHLQMDLG_file:
+#     YHLQMDLG_file.write(json_text)
+#     YHLQMDLG_file.close()
+#open sin cometario pasa automaticamente a lectura "r"
     
     
     

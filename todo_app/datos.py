@@ -1,5 +1,7 @@
 from uuid import uuid4
+from file_manager import obtener_datos
 
+obtener_datos()
 
 _tareas =  []
 
