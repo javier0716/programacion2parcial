@@ -1,5 +1,5 @@
 from menu import imprimir_menu
-from datos import crear_tarea, obtener_todas_las_tareas
+from datos import crear_tarea, obtener_todas_las_tareas, eliminar_tarea
 # import json 
 
 salir = False
@@ -67,6 +67,8 @@ while not salir:
         
         del_tarea = tareas[del_index]
         
-        print(del_tarea) 
+        eliminar_tarea(del_tarea)
+        
+        print('\nTarea Eliminada!\n\n')
     else:
         print(f"La opcion '{resp}' no es valida:")

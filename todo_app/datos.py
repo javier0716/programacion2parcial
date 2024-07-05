@@ -16,6 +16,12 @@ def crear_tarea(titulo: str):
     
     sincronizar_todos(_tareas)
     #append es agregar en este contexto
+    
+    
 def obtener_todas_las_tareas():
     return _tareas 
 
+def eliminar_tarea(tarea: dict):
+    _tareas.remove(tarea)
+    
+    sincronizar_todos(_tareas)
