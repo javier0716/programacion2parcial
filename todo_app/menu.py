@@ -7,4 +7,5 @@ def imprimir_menu():
     print('3. Ver tareas completadas')
     print('4. Agregar tarea')
     print('5. Eliminar tarea')
+    print('6. Completar tarea')
     print('0. Salir')

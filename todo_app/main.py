@@ -1,5 +1,5 @@
 from menu import imprimir_menu
-from datos import crear_tarea, obtener_todas_las_tareas, eliminar_tarea
+from datos import crear_tarea, obtener_todas_las_tareas, eliminar_tarea, obtener_tareas_pendientes, obtener_tareas_completadas
 # import json 
 
 salir = False
@@ -47,9 +47,18 @@ while not salir:
             print(f'{index + 1})  {tarea['titulo']}')
             
     elif resp =='2':
-        pass
+         print('\n------ Tareas pendientes ------')
+         tareas = obtener_tareas_pendientes()
+         for tarea in tareas:
+            index = tareas.index(tarea)
+            print(f'{index + 1})  {tarea['titulo']}')
     elif resp =='3':
-        pass
+        print('\n------ Tareas completadas ------')
+        tareas = obtener_tareas_completadas()
+        for tarea in tareas:
+            index = tareas.index(tarea)
+            print(f'{index + 1})  {tarea['titulo']}')
+            
     elif resp =='4':
         titulo_tarea = input('Ingrese la nueva tarea: ')
         crear_tarea(titulo_tarea)
@@ -70,5 +79,19 @@ while not salir:
         eliminar_tarea(del_tarea)
         
         print('\nTarea Eliminada!\n\n')
+    elif resp == '6':
+           print('\n------ Completar una tarea ------')
+           tareas = obtener_tareas_pendientes()
+           for tarea in tareas:
+                index = tareas.index(tarea)
+                print(f'{index + 1})  {tarea['titulo']}')
+            
+           comp_opt = input("Ingrese el numero de la tarea que desea completar: ")
+           
+           comp_index = int(comp_opt) - 1
+        
+           comp_tarea = tareas[comp_index]
+           
+           print(comp_tarea)
     else:
         print(f"La opcion '{resp}' no es valida:")
