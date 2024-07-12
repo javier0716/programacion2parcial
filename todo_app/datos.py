@@ -49,5 +49,6 @@ def completar_tarea(tarea_id: str):
     for tarea in _tareas:
         if tarea['id'] == tarea_id:
             tarea['completada'] = True
-            
+            sincronizar_todos(_tareas)
             break
+            
