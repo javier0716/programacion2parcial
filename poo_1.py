@@ -27,6 +27,9 @@ class Todo:
     def set_completada(self, completada: bool):
         self.__completada = completada   
     
+    def get_fecha_creacion(self) -> datetime:
+        return self.__fecha_creacion
+    
 todo_1 = Todo("Test 1")
 todo_2 = Todo("Test 2")
 
@@ -37,6 +40,7 @@ todo_1.set_nombre("Test 3")
 print(todo_1.get_mombre())
 todo_1.set_completada(True)
 print(todo_1.get_completada())
+print(todo_1.get_fecha_creacion())
 
 # todo_1.__id = "ABC123"
 
