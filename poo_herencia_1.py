@@ -26,21 +26,21 @@ class Perro(Animal):
         print("Wao Wao")
 
     def comer(self):
-        print("ñan ñan")
+        print("ñam ñam")
 
 perro_1 = Perro("cafe oscuro", "largo", "macho", "mediano", "delgado", "pastor aleman")
-#perro_1.ladrar()
+perro_1.ladrar()
 perro_1.comer()
 
 class Gato(Animal):
     def __init__(self, color_pelaje: str, pelaje: str, sexo: str, tamano: str, cuerpo: str, raza: str):
         super().__init__(color_pelaje, pelaje, sexo, tamano, cuerpo, raza)
-
+        self.comida = 0 
     def maullar(self):
         print("Miau Miau")
 
-    def comer(self):
-        print("ñam ñam")
+    #def comer(self):
+     #   print("ñam ñam")
 
 gato_1 = Gato("negro", "frondoso", "femenino", "pequeño", "flaco","siames")
 #gato_1.maullar()
