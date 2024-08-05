@@ -11,12 +11,19 @@ running = True
 coord_x = 390
 coord_y = 290
 
+
 speed_x = 1
 speed_y = 1
+
+clock = pygame.time.Clock()
+
+
 while running: 
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False 
+
+    clock.tick(60)
             
     coord_x += speed_x
     
