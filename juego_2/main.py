@@ -23,7 +23,8 @@ while running:
                 print("w")
         
         elif event.type == pygame.KEYUP:
-            print("KEYUP")
+            if event.key == pygame.K_s:
+                print("s")
         
 
     delta_time = clock.tick(60) / 1000
