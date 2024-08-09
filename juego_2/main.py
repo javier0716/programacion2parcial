@@ -39,6 +39,12 @@ while running:
     delta_time = clock.tick(60) / 1000
     
     player_1_coord_y += player_1_speed * delta_time
+    
+    if player_1_coord_y < 0:
+        player_1_coord_y = 0
+        
+    if player_1_coord_y > 450:
+        player_1_coord_y = 450
 
     screen.fill(bg_color)
     
