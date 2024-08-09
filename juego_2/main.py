@@ -10,7 +10,7 @@ bg_color = [0,0,0]
 
 clock = pygame.time.Clock()
 
-PLAYER_MAX_SPEED = 200
+PLAYER_MAX_SPEED = 400
 
 player_1_coord_x = 40
 player_1_coord_y = 225
@@ -24,14 +24,14 @@ while running:
         elif event.type == pygame.KEYDOWN:
             if event.key == pygame.K_w:
              player_1_speed = PLAYER_MAX_SPEED * -1
-             if event.key == pygame.K_s:
-                 player_1_speed = PLAYER_MAX_SPEED
+            if event.key == pygame.K_s:
+                player_1_speed = PLAYER_MAX_SPEED
         
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_w:
                 player_1_speed = 0
             if event.key == pygame.K_s:
-                player_1_speed = PLAYER_MAX_SPEED
+                player_1_speed = 0
                 
         
         
