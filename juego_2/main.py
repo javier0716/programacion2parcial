@@ -1,6 +1,8 @@
 import pygame 
 from player import Player
 from config import Config
+from pygame import surface
+from ball import Ball
 pygame.init()
 
 screen = pygame.display.set_mode((Config.SCREEN_WIDTH, Config.SCREEN_HEIGHT), flags=pygame.SCALED, vsync=1)
@@ -24,6 +26,14 @@ player_2 = Player (
         Config.PLAYER_WIDTH,
         Config.PLAYER_HEIGHT
 )
+
+ball = Ball  (
+    screen,
+     Config.SCREEN_WIDTH/2,
+     Config.SCREEN_HEIGHT/2,
+     30
+
+) 
 
 
 while running:
@@ -54,6 +64,7 @@ while running:
     screen.fill(bg_color)
     player_1.draw()
     player_2.draw()
+    ball.draw()
     pygame.display.flip()
     
     pygame.display.flip()
