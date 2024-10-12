@@ -29,8 +29,8 @@ player_2 = Player (
 
 ball = Ball  (
     screen,
-     Config.SCREEN_WIDTH/2,
-     Config.SCREEN_HEIGHT/2,
+     (Config.SCREEN_WIDTH/2) - 15,
+     (Config.SCREEN_HEIGHT/2) - 15,
      30
 
 ) 
@@ -60,7 +60,7 @@ while running:
     delta_time = clock.tick(120) / 1000
     player_1.move(delta_time)
     player_2.move(delta_time)
-
+    ball.move(delta_time)
     screen.fill(bg_color)
     player_1.draw()
     player_2.draw()
