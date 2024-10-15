@@ -57,6 +57,12 @@ while running:
             if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                 player_2.set_velocidad(0)
 
+    if ball.get_x >= Config.SCREEN_WIDTH:
+        ball.reiniciar_pos
+
+    if ball.get_x() <= 0:
+        ball.reiniciar_pos
+
     delta_time = clock.tick(120) / 1000
     player_1.move(delta_time)
     player_2.move(delta_time)
