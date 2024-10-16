@@ -23,8 +23,8 @@ class Ball:
         )
 
     def reiniciar_pos(self) -> None:
-        self.__ini_x = self.__ini_x
-        self.__ini_y = self.__ini_y
+        self.__x = self.__ini_x
+        self.__y = self.__ini_y
 
     def invertir_velocidad_y(self) -> None:
         self.__velocidad_y *= -1

@@ -1,7 +1,7 @@
 import pygame 
 from player import Player
 from config import Config
-from pygame import surface
+
 from ball import Ball
 pygame.init()
 
@@ -57,11 +57,11 @@ while running:
             if event.key == pygame.K_UP or event.key == pygame.K_DOWN:
                 player_2.set_velocidad(0)
 
-    if ball.get_x >= Config.SCREEN_WIDTH:
-        ball.reiniciar_pos
+    if ball.get_x() >= Config.SCREEN_WIDTH:
+        ball.reiniciar_pos()
 
-    if ball.get_x() <= 0:
-        ball.reiniciar_pos
+    if ball.get_x() <= 0 - 30:
+        ball.reiniciar_pos()
 
     delta_time = clock.tick(120) / 1000
     player_1.move(delta_time)
