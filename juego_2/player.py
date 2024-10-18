@@ -37,3 +37,15 @@ class Player:
     
     def aumentar_punto(self) -> None:
         self.__puntos += 1
+
+    def get_x(self) -> int:
+        return self.__x
+    
+    def get_y(self) -> int:
+        return self.__y
+    
+    def get_alto (self) -> int:
+        return self.__alto
+    
+    def get_ancho(self) -> int:
+        return self.__ancho

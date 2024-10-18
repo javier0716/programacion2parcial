@@ -45,3 +45,9 @@ class Ball:
 
     def get_x(self) -> int:
         return self.__x
+    
+    def get_y(self) -> int:
+        return self.__y
+    
+    def get_size(self) -> int:
+        return self.__size
