@@ -12,6 +12,7 @@ class Ball:
         self.__y = y
         self.__velocidad_x = Config.BALL_MAX_SPEED * random.choice((1, -1))
         self.__velocidad_y = Config.BALL_MAX_SPEED * random.choice((1, -1))
+        self.set_random_y_direction()
         self.__screen = screen
         self.__size = size
 
