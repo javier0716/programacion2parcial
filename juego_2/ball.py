@@ -29,6 +29,11 @@ class Ball:
     def invertir_velocidad_y(self) -> None:
         self.__velocidad_y *= -1
 
+    def invertir_velocidad_x(self) -> None:
+        self.__velocidad_x *= -1
+
+    def set_random_y_direction(self) -> None:
+      self.__velocidad_y = Config.BALL_MAX_SPEED * random.choice((1, -1))  
 
     def move(self, delta_time: float) -> None:
         self.__x += self.__velocidad_x * delta_time
@@ -36,6 +41,7 @@ class Ball:
         
         if (self.__y <= 0) or (self.__y >= Config.SCREEN_HEIGHT - self.__size):
             self.invertir_velocidad_y()
+
 
     def get_x(self) -> int:
         return self.__x

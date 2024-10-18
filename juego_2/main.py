@@ -59,9 +59,18 @@ while running:
 
     if ball.get_x() >= Config.SCREEN_WIDTH:
         ball.reiniciar_pos()
+        ball.invertir_velocidad_x()
+        ball.set_random_y_direction()
+        player_1.aumentar_punto()
 
     if ball.get_x() <= 0 - 30:
         ball.reiniciar_pos()
+        ball.invertir_velocidad_x()
+        ball.set_random_y_direction()
+        player_2.aumentar_punto()
+
+
+    print(f"Player 1:{player_1.get_puntos} player_2: {player_2.get_puntos}")
 
     delta_time = clock.tick(120) / 1000
     player_1.move(delta_time)

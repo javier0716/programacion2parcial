@@ -11,6 +11,7 @@ class Player:
         self.__alto = alto
         self.__velocidad = 0
         self.__screen = screen
+        self.__puntos = 0
 
     def set_velocidad(self, velocidad: int):
         self.__velocidad = velocidad
@@ -30,3 +31,9 @@ class Player:
 
         if self.__y > 450:
             self.__y = 450  
+
+    def get_puntos(self) -> int:
+        return self.__puntos
+    
+    def aumentar_punto(self) -> None:
+        self.__puntos += 1
