@@ -58,12 +58,15 @@ while running:
                 player_2.set_velocidad(0)
 
     ball_l = ball.get_x()
-
+    ball_t = ball.get_y()
+    ball_b = ball.get_y() + ball.get_size()
 
 
     player_1_r = player_1.get_x() + player_1.get_ancho()
+    player_1_t = player_1.get_y()
+    player_1_b = player_1.get_y() + player_1.get_alto()
 
-    if ((player_1_r >= ball_l )):
+    if ((player_1_r >= ball_l ) and (() or ())):
         ball.invertir_velocidad_x()
 
 
