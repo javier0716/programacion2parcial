@@ -60,16 +60,23 @@ while running:
     ball_l = ball.get_x()
     ball_t = ball.get_y()
     ball_b = ball.get_y() + ball.get_size()
+    ball_r = ball.get_x() + ball.get_size()
 
 
     player_1_r = player_1.get_x() + player_1.get_ancho()
     player_1_t = player_1.get_y()
     player_1_b = player_1.get_y() + player_1.get_alto()
 
-    if ((player_1_r >= ball_l ) and (() or ())):
+    player_2_l = player_2.get_x()
+    player_2_t = player_2.get_y()
+    player_2_b = player_2.get_y() + player_2.get_alto()
+
+    if ((player_1_r >= ball_l ) and (((ball_b >= player_1_t) and (ball_b <= player_1_b)) or ((ball_t >= player_1_t) and  (ball_t <= player_1_t)))):
         ball.invertir_velocidad_x()
 
-
+    if ((player_2_l <= ball_r ) and (((ball_b >= player_2_t) and (ball_b <= player_2_b)) or ((ball_t >= player_2_t) and  (ball_t <= player_2_t)))):
+    #if (player_2_l <= ball_r ):
+        ball.invertir_velocidad_x()
 
 
 
