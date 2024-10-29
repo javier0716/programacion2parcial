@@ -52,3 +52,15 @@ class Ball:
     
     def get_size(self) -> int:
         return self.__size
+    
+    def get_left(self) -> int:
+        self.__x
+    
+    def get_top(self) -> int:
+        self.__y
+    
+    def get_bottom(self) -> int:
+        self.__y + self.__size
+    
+    def get_rigth(self) -> int:
+        self.__x + self.__size

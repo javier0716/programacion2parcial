@@ -62,6 +62,12 @@ while running:
     ball_b = ball.get_y() + ball.get_size()
     ball_r = ball.get_x() + ball.get_size()
 
+    # ball.get_left()
+     #ball.get_top()
+     #ball.get_bottom()
+     #ball.get_rigth()
+
+
 
     player_1_r = player_1.get_x() + player_1.get_ancho()
     player_1_t = player_1.get_y()
