@@ -49,3 +49,15 @@ class Player:
     
     def get_ancho(self) -> int:
         return self.__ancho
+    
+    def get_left(self) -> int:
+        return self.__x
+
+    def get_right(self) -> int:
+        return self.__x
+
+    def get_top(self) -> int:
+        return self.__y
+
+    def get_bottom(self) -> int:
+        return self.__x + self.__y
